@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ramo de Flores Amarillas Centrado 🌼</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      background: linear-gradient(135deg, #0f0f11 0%, #2a2a40 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #ffd94d;
+      text-align: center;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+    
+    .container {
+      background: rgba(15, 15, 17, 0.9);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 0 30px rgba(255, 217, 77, 0.3);
+      max-width: 90%;
+      width: 800px;
+      margin: 20px auto;
+    }
+    
+    h1 {
+      text-shadow: 0 0 15px yellow;
+      margin: 0 0 20px 0;
+      font-size: 2.5rem;
+    }
+    
+    .svg-container {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      margin: 20px auto;
+      border: 2px solid #ffd94d;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.2);
+      padding: 10px;
+    }
+    
+    svg {
+      width: 100%;
+      height: auto;
+    }
+    
+    .flor {
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+    
+    .left {
+      animation: sway 4s ease-in-out infinite;
+    }
+    
+    .center {
+      animation: sway 5s ease-in-out infinite;
+    }
+    
+    .right {
+      animation: sway 4.5s ease-in-out infinite;
+    }
+    
+    @keyframes sway {
+      0% {
+        transform: rotate(-5deg);
+      }
+      50% {
+        transform: rotate(5deg);
+      }
+      100% {
+        transform: rotate(-5deg);
+      }
+    }
+    
+    .controls {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    
+    button {
+      background: #ffd94d;
+      color: #0f0f11;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.3s;
+      font-size: 1rem;
+    }
+    
+    button:hover {
+      background: #fff07a;
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255, 217, 77, 0.5);
+    }
+    
+    .footer {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      
+      .container {
+        padding: 20px;
+      }
+      
+      button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>💛 Flores Amarillas Para Coral 😜💛</h1>
+
+    <div class="svg-container">
+      <svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="petaloGrad" cx="50%" cy="40%" r="60%">
+            <stop offset="0%" stop-color="#fff07a" />
+            <stop offset="100%" stop-color="#f6d32a" />
+          </radialGradient>
+          <radialGradient id="centroGrad" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="orange" />
+            <stop offset="100%" stop-color="brown" />
+          </radialGradient>
+        </defs>
+
+        <!-- Tallos -->
+        <line x1="100" y1="250" x2="60" y2="100" stroke="green" stroke-width="5" />
+        <line x1="100" y1="250" x2="100" y2="100" stroke="green" stroke-width="5" />
+        <line x1="100" y1="250" x2="140" y2="100" stroke="green" stroke-width="5" />
+
+        <!-- Flor izquierda -->
+        <g class="flor left">
+          <g transform="translate(60, 120)">
+            <ellipse rx="8" ry="18" fill="url(#petaloGrad)" transform="rotate(0) translate(0, -18)" />
+            <ellipse rx="8" ry="18" fill="url(#petaloGrad)" transform="rotate(45) translate(0, -18)" />
+            <ellipse rx="8" ry="18" fill="url(#petaloGrad)" transform="rotate(90) translate(0, -18)" />
+            <ellipse rx="8" ry="18" fill="url(#petaloGrad)" transform="rotate(135) translate(0, -18)" />
+            <ellipse rx="8" ry="18" fill="url(#petaloGrad)" transform="rotate(180) translate(0, -18)" />
+            <ellipse rx="8" ry="18" fill="url(#petaloGrad)" transform="rotate(225) translate(0, -18)" />
+            <ellipse rx="8" ry="18" fill="url(#petaloGrad)" transform="rotate(270) translate(0, -18)" />
+            <ellipse rx="8" ry="18" fill="url(#petaloGrad)" transform="rotate(315) translate(0, -18)" />
+          </g>
+          <circle r="10" fill="url(#centroGrad)" cx="60" cy="120" />
+        </g>
+
+        <!-- Flor centro -->
+        <g class="flor center">
+          <g transform="translate(100, 100)">
+            <ellipse rx="9" ry="20" fill="url(#petaloGrad)" transform="rotate(0) translate(0, -20)" />
+            <ellipse rx="9" ry="20" fill="url(#petaloGrad)" transform="rotate(45) translate(0, -20)" />
+            <ellipse rx="9" ry="20" fill="url(#petaloGrad)" transform="rotate(90) translate(0, -20)" />
+            <ellipse rx="9" ry="20" fill="url(#petaloGrad)" transform="rotate(135) translate(0, -20)" />
+            <ellipse rx="9" ry="20" fill="url(#petaloGrad)" transform="rotate(180) translate(0, -20)" />
+            <ellipse rx="9" ry="20" fill="url(#petaloGrad)" transform="rotate(225) translate(0, -20)" />
+            <ellipse rx="9" ry="20" fill="url(#petaloGrad)" transform="rotate(270) translate(0, -20)" />
+            <ellipse rx="9" ry="20" fill="url(#petaloGrad)" transform="rotate(315) translate(0, -20)" />
+          </g>
+          <circle r="12" fill="url(#centroGrad)" cx="100" cy="100" />
+        </g>
+
+        <!-- Flor derecha -->
+        <g class="flor right">
+          <g transform="translate(140, 120)">
+            <ellipse rx="8" ry="18" fill="url(#petaloGrad)" transform="rotate(0) translate(0, -18)" />
+            <ellipse rx="8" ry="18" fill="url(#petaloGrad)" transform="rotate(45) translate(0, -18)" />
+            <ellipse rx="8" ry="18" fill="url(#petaloGrad)" transform="rotate(90) translate(0, -18)" />
+            <ellipse rx="8" ry="18" fill="url(#petaloGrad)" transform="rotate(135) translate(0, -18)" />
+            <ellipse rx="8" ry="18" fill="url(#petaloGrad)" transform="rotate(180) translate(0, -18)" />
+            <ellipse rx="8" ry="18" fill="url(#petaloGrad)" transform="rotate(225) translate(0, -18)" />
+            <ellipse rx="8" ry="18" fill="url(#petaloGrad)" transform="rotate(270) translate(0, -18)" />
+            <ellipse rx="8" ry="18" fill="url(#petaloGrad)" transform="rotate(315) translate(0, -18)" />
+          </g>
+          <circle r="10" fill="url(#centroGrad)" cx="140" cy="120" />
+        </g>
+
+        <!-- Moño realista (reemplazar el moño actual) -->
+        <!-- Moño realista mejorado -->
+<!-- MOÑO CON CORAZONES MÁS GRANDES Y MISMO COLOR -->
+<g transform="translate(100, 250)">
+  
+  <!-- Corazón izquierdo más grande y color del centro -->
+  <path d="M -24,0 C -24,-8 -16,-8 -16,0 C -16,-8 -8,-8 -8,0 C -8,4 -16,12 -16,12 C -16,12 -24,4 -24,0 Z" 
+        fill="#cc0000" transform="rotate(-85 -13 -3)" />
+  
+  <!-- Corazón derecho más grande y color del centro -->
+  <path d="M 8,0 C 8,-8 16,-8 16,0 C 16,-8 24,-8 24,0 C 24,4 16,12 16,12 C 16,12 8,4 8,0 Z" 
+        fill="#cc0000" transform="rotate(85 13 -3)" />
+  
+  <!-- Círculo en el medio -->
+  <circle cx="0" cy="0" r="6" fill="#cc0000" />
+  
+  <!-- Listones como líneas slash -->
+  <line x1="-2" y1="2" x2="-6" y2="25" stroke="#cc0000" stroke-width="4" stroke-linecap="round" />
+  <line x1="2" y1="2" x2="6" y2="25" stroke="#cc0000" stroke-width="4" stroke-linecap="round" />
+  
+</g>
+      </svg>
+    </div>
+
+    <div class="controls">
+      <button onclick="changeFlowerColor()">Cambiar color de flores</button>
+      <button onclick="toggleAnimation()">Alternar animación</button>
+    </div>
+
+    <div class="footer">
+      <p>Las flores están correctamente posicionadas en el centro</p>
+    </div>
+  </div>
+
+  <script>
+    function changeFlowerColor() {
+      const colors = ['#FFD700', '#FFA500', '#FF6B6B', '#A5D6A7', '#90CAF9', '#FF4081'];
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      
+      // Crear nuevo gradiente
+      const newGradient = document.getElementById('petaloGrad');
+      newGradient.innerHTML = `
+        <stop offset="0%" stop-color="${randomColor}" />
+        <stop offset="100%" stop-color="${randomColor}99" />
+      `;
+    }
+    
+    function toggleAnimation() {
+      const flowers = document.querySelectorAll('.flor');
+      flowers.forEach(flower => {
+        if (flower.style.animationPlayState === 'paused') {
+          flower.style.animationPlayState = 'running';
+        } else {
+          flower.style.animationPlayState = 'paused';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
